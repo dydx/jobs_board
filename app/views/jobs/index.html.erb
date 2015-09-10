@@ -1,1 +1,7 @@
-<h1>RailsBridge Corp Open Jobs</h1>
+<h1>RailsBridge Jobs Board</h1>
+
+<ol>
+  <% @jobs.each do |job| %>
+    <li><%= link_to job.title, job_path(job) %></>
+  <% end %>
+</ol>
